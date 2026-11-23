@@ -4,8 +4,8 @@
  * OOP concepts demonstrated:
  *   - Abstraction   : class is abstract; getDetails() is abstract — subclasses
  *                     must provide their own implementation.
- *   - Encapsulation : fields are protected — subclasses can use them directly,
- *                     other classes must go through the getters/setters.
+ *   - Encapsulation : fields are protected — subclasses use them directly,
+ *                     other classes are meant to use the getters/setters.
  *   - Inheritance   : K2703399_Guest and K2703399_Admin both extend this class.
  *
  * @author  K.H. Nandun Lakshan De Silva
@@ -15,7 +15,7 @@
 public abstract class K2703399_Person {
 
     // -----------------------------------------------------------------------
-    // Protected fields (Encapsulation — visible to subclasses only)
+    // Protected fields (Encapsulation — meant for the subclasses)
     // -----------------------------------------------------------------------
     protected String fullName;
     protected String contactNumber;
@@ -26,7 +26,7 @@ public abstract class K2703399_Person {
     // -----------------------------------------------------------------------
 
     /** Default constructor — initialises fields to empty strings.
-     *  Protected: only subclasses can call it, because Person is abstract. */
+     *  Protected: meant for the subclasses, because Person is abstract. */
     protected K2703399_Person() {
         this.fullName      = "";
         this.contactNumber = "";

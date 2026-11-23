@@ -12,8 +12,8 @@
  *   - Polymorphism  : K2703399_Reservation and K2703399_Invoice call
  *                     getDailyRate(), getTaxRate() etc. on a K2703399_Room
  *                     reference; the subclass version runs at runtime.
- *   - Encapsulation : fields are protected (visible to subclasses only, not
- *                     to other classes) and reached through getters/setters.
+ *   - Encapsulation : fields are protected (meant for the subclasses);
+ *                     other classes reach them through getters/setters.
  *   - Constructor Overloading : two constructors — a short form that creates
  *                     the room as AVAILABLE and a full form with a status.
  *
@@ -41,7 +41,7 @@ public abstract class K2703399_Room {
     protected static final int MAX_EXTRA_GUESTS = 2; // guests allowed above base capacity
 
     // -----------------------------------------------------------------------
-    // Protected fields (Encapsulation — visible to subclasses only)
+    // Protected fields (Encapsulation — meant for the subclasses)
     // -----------------------------------------------------------------------
     protected final String                      roomId;
     protected K2703399_BedType                  bedType;
