@@ -78,7 +78,8 @@ SmartStay/
 │   └── K2703399_AvailabilityStatus.java# Enum
 └── docs/
     ├── SmartStay_ClassDiagram.png      # UML class diagram (export)
-    └── SmartStay_ClassDiagram.drawio   # UML class diagram (source, draw.io)
+    ├── SmartStay_ClassDiagram.drawio   # UML class diagram (source, draw.io)
+    └── SmartStay_ClassDiagram.drawio.svg # UML class diagram (SVG export)
 ```
 
 ## Design overview
