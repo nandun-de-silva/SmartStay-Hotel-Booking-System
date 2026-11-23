@@ -1,0 +1,25 @@
+# Compiled Java
+*.class
+out/
+bin/
+build/
+
+# IDE settings
+.vscode/
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+# draw.io backups
+*.drawio.bkp
+*.bkp
+
+# OS files
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Office lock files
+~$*
